@@ -385,80 +385,70 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 text-center">
-        <h2 class="text-7xl font-extrabold mb-8 ">Contact</h2>
-        <p class="mb-12">Feel free to reach out to me via email or connect with me on LinkedIn.</p>
-        <div class="flex justify-center space-x-6">
-            <a href="mailto:dhruvrana841999@gmail.com" class="text-yellow-500 hover:text-yellow">
-                <i class="fas fa-envelope text-4xl"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/dhruv-rana-181707194" class="text-yellow-500 hover:text-yellow"
-                target="_blank">
-                <i class="fab fa-linkedin text-4xl"></i>
-            </a>
+<section id="contact" class="py-20 text-center">
+  <h2 class="text-7xl font-extrabold mb-8">Contact</h2>
+  <p class="mb-12">Feel free to reach out to me via email or connect with me on LinkedIn.</p>
+  <div class="flex justify-center space-x-6">
+    <a href="mailto:dhruvrana841999@gmail.com" class="text-yellow-500 hover:text-yellow">
+      <i class="fas fa-envelope text-4xl"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/dhruv-rana-181707194" class="text-yellow-500 hover:text-yellow" target="_blank">
+      <i class="fab fa-linkedin text-4xl"></i>
+    </a>
+  </div>
+  <form class="max-w-[800px] mx-auto mt-8">
+    <div class="border-dashed rounded-lg p-10 md:p-8 px-10 py-14 xs:px-8 xs:py-8">
+      <div class="grid md:grid-cols-2 xs:grid-cols-1 sm:grid-cols-1 gap-4 md:gap-8 xs:gap-4 mb-8 xs:mb-4">
+        <div class="block">
+          <p>
+            <label class="font-bold text-lg xs:text-sm leading-4 mb-2 w-full block">Full name</label>
+            <input size="40" required maxlength="80"
+              class="w-full px-4 py-5 h-14 text-base font-medium rounded border border-gray-300 dark:border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 dark:bg-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
+              aria-required="true" placeholder="Write your Name" type="text" name="your-name">
+          </p>
         </div>
-        <form class="max-w-[800px] mx-auto mt-8">
-            <div class="border-dashed rounded-lg p-10 md:p-8 px-10 py-14 xs:px-8 xs:py-8">
-                <div class="grid md:grid-cols-2 xs:grid-cols-1 sm:grid-cols-1 gap-4 md:gap-8 xs:gap-4 mb-8 xs:mb-4">
-                    <div class="block">
-                        <p>
-                            <label class="font-bold text-lg xs:text-sm leading-4 mb-2 w-full block">Full name</label>
-                            <input size="40" required maxlength="80"
-                                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required h-14 xsh-8 w-full px-4 py-5 text-base leading-base font-medium leading-4 rounded border border-gray-300 dark:border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 dark:bg-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
-                                aria-required="true" aria-invalid="false" placeholder="Write your Name" value=""
-                                type="text" name="your-name">
-                        </p>
-                    </div>
+        <div class="block">
+          <p>
+            <label class="font-bold text-lg xs:text-sm leading-4 mb-2 w-full block">Email</label>
+            <input size="40" required maxlength="80"
+              class="w-full px-4 py-5 h-14 text-base font-medium rounded border border-gray-300 dark:border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 dark:bg-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
+              aria-required="true" placeholder="Write your Email" type="email" name="your-email">
+          </p>
+        </div>
+        <div class="block md:col-span-2">
+          <p>
+            <label class="font-bold text-lg xs:text-sm leading-4 mb-2 w-full block">Reason to contact</label>
+            <select required
+              class="w-full px-4 py-3 h-14 text-base font-medium rounded border border-gray-300 dark:border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 dark:bg-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 appearance-none"
+              name="your-subject">
+              <option value="" class="dark:text-gray-400">—Please choose an option—</option>
+              <option value="Interested to build your own website">Interested to build your own website</option>
+              <option value="Interested in build your Automation workflows.">Interested in building your Automation workflows.</option>
+              <option value="Want to connect for any collaboration">Want to connect for any collaboration</option>
+              <option value="Others">Others</option>
+            </select>
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 mb-8 xs:mb-4">
+        <div class="block">
+          <p>
+            <label class="font-bold text-lg xs:text-sm leading-4 mb-2 w-full block">Message</label>
+            <textarea required minlength="10" maxlength="1000"
+              class="w-full px-4 py-3 h-60 text-base font-medium rounded border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
+              placeholder="Write Message here" name="your-message"></textarea>
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center mt-4">
+        <input
+          class="rounded w-full font-bold p-4 transition-all duration-300 hover:bg-transparent hover:shadow-2xl focus:shadow-inner dark:bg-white dark:text-black border"
+          type="submit" value="Send Message">
+      </div>
+    </div>
+  </form>
+</section>
 
-                    <!-- Hidden Email Field -->
-                    <input type="hidden" name="your-email" value="">
-
-                    <!-- Hidden Phone Number Field -->
-                    <input type="hidden" name="your-number" value="">
-
-                    <div class="block">
-                        <p>
-                            <label class="font-bold text-lg xs:text-sm leading-4 mb-2 w-full block">Reason to
-                                contact</label>
-                            <select
-                                class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required h-14 xsh-11 w-full px-4 py-3 text-base leading-base font-medium leading-4 rounded border border-gray-300 dark:border-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 dark:bg-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 appearance-none"
-                                aria-required="true" aria-invalid="false" name="your-subject" required>
-                                <option value="" class="dark:text-gray-400">—Please choose an option—</option>
-                                <option value="Interested to build your own website">Interested to build your own
-                                    website</option>
-                                <option value="Interested in build your Automation workflows.">Interested in building
-                                    your Automation workflows.</option>
-                                <option value="Want to connect for any collaboration">Want to connect for any
-                                    collaboration</option>
-                                <option value="Others">Others</option>
-                            </select>
-                        </p>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 mb-8 xs:mb-4">
-                    <div class="block">
-                        <p>
-                            <label class="font-bold text-lg xs:text-sm leading-4 mb-2 w-full block">Message</label>
-                            <span class="wpcf7-form-control-wrap" data-name="your-message">
-                                <textarea cols="40" rows="10" maxlength="1000" minlength="10"
-                                    class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required rows-5 h-60 xsh-32 w-full px-4 py-3 text-base xstext-sm leading-base font-medium focus-visibleoutline-0 leading-4 rounded border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white"
-                                    aria-required="true" aria-invalid="false" placeholder="Write Message here"
-                                    name="your-message"></textarea>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="flex justify-center mt-4">
-                    <p>
-                        <input
-                            class="wpcf7-form-control wpcf7-submit has-spinner rounded w-full font-base xstext-sm leading-base xsleading-sm font-bold p-4 xsp-3 hovershadow-2xl transition-all duration-300 focusshadow-inner focus-visibleoutline-0 hoverbg-transparent focus-visibleshadow-2xl focus-visibleopacity-60 dark:bg-white dark:text-black border"
-                            type="submit" value="Send Message">
-                        <span class="wpcf7-spinner"></span>
-                    </p>
-                </div>
-            </div>
-        </form>
-    </section>
 
 
     <footer class="py-6 text-center">
